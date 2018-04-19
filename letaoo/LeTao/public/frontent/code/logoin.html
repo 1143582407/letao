@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons-extra.css">
+    <link rel="stylesheet" href="../fonts/mui-icons-extra.css">
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        /* 登录导航背景 */
+        #header {
+            background-color: #006699;
+        }
+        /* 登录导航标题 */
+        .mui-title {
+            color: #ffffff;
+        }
+        /* 用户名 密码框位置 */
+        .mui-input-row {
+            margin-top: 14px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        /* 确认登录 */
+        .mui-btn.mui-btn-primary {
+            width: 100%;
+            margin-top: 36px;
+        }
+        /* 主要内容 */
+        .mui-content a {
+            font-size: 14px;
+            margin-left: 254px;
+        }
+        /* 底部导航背景 */
+        .mui-bar.mui-bar-tab {
+            background-color: #006699;
+        }
+        /* 底部文字颜色 */
+        .mui-bar.mui-bar-tab a span {
+            color: #ffffff;
+        }
+        /* 图标字体大小 */
+        .mui-bar.mui-bar-tab .mui-icon {
+           font-size: 20px;
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+    <!-- 登录导航 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">登录</h1>
+    </header>
+
+   <!-- 主要内容 -->
+    <main class="mui-content">
+         <!-- 用户名 -->
+        <div class="mui-input-row">
+            <input type="text" placeholder="用户名/手机号">
+        </div>
+        <!-- 密码框 -->
+        <div class="mui-input-row mui-password">
+            <input type="password" class="mui-input-password" data-input-password="3" placeholder="密码">
+            <span class="mui-icon mui-icon-eye"></span>
+        </div>
+        <!-- 确认登录 -->
+        <div class="mui-button-row" style="margin-right:10px;margin-left:10px;">
+            <button type="button" class="mui-btn mui-btn-primary" onclick="return false;">登录</button>&nbsp;&nbsp;
+        </div>
+        <a href="javascript:;">免费注册</a>
+    </main>
+    <!-- 底部导航 -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+                <span class="mui-icon mui-icon-bars"></span>
+                <!-- <span class="mui-badge">9</span> -->
+            </span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-contact mui-icon-icon-contact-filled"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons-extra.css">
+    <link rel="stylesheet" href="../fonts/mui-icons-extra.css">
+    <title>分类</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #c9c9c9;
+        }
+
+        /* 导航背景 */
+
+        #header {
+            position: relative;
+            background-color: #006699;
+            height: 50px;
+        }
+        /* 输入框 */
+        .mui-input {
+            position: absolute;
+            height: 26px;
+            right: 42px;
+            top: 5px;
+            display: inline-block;
+            width: 230px;
+        }
+        /* 搜索图标 */
+        .mui-icon.mui-icon-search {
+            position: absolute;
+            right: 7px;
+            top: 7px;
+        }
+
+
+
+        /* 底部导航背景 */
+
+        .mui-bar.mui-bar-tab {
+            background-color: #006699;
+        }
+
+        /* 底部文字颜色 */
+
+        .mui-bar.mui-bar-tab a span {
+            color: #ffffff;
+        }
+
+        /* 底部图标字体大小 */
+
+        .mui-bar.mui-bar-tab .mui-icon {
+            font-size: 20px;
+        }
+
+        .btn-T {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <!-- 左箭头 -->
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <!-- 搜索框 -->
+        <div class="mui-input">
+            <input type="text">
+        </div>
+        <!-- 右搜索图标 -->
+        <span class="mui-icon mui-icon-search"></span>
+    </header>
+    <!-- 主要内容 -->
+    <main class="mui-content">
+        <!-- 左边内容 -->
+        <aside class="mui-sort-main-left">
+            <ul>
+                <li>运动馆</li>
+                <li>女士馆</li>
+                <li>男士馆</li>
+                <li>帆布馆</li>
+                <li>户外馆</li>
+            </ul>
+        </aside>
+        <!-- 右边内容 -->
+    </main>
+
+
+
+    <!-- 底部导航 -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars"></span>
+            <!-- <span class="mui-badge">9</span> -->
+            </span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-contact mui-icon-icon-contact-filled"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</body>
+
+</html>

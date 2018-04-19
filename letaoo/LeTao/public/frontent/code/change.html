@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改密码</title>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons-extra.css">
+    <link rel="stylesheet" href="../fonts/mui-icons-extra.css">
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        /* 修改密码导航背景 */
+        #header {
+            background-color: #006699;
+        }
+
+        /* 修改密码导航标题 */
+        .mui-title {
+            color: #ffffff;
+        }
+
+        /* 密码框位置 */
+        .mui-input-row.mui-password {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        /* 确认修改按钮 */
+        .mui-btn.mui-btn-primary {
+            width: 100%;
+            margin-top: 36px;
+        }
+
+
+         /* 底部导航背景 */
+         .mui-bar.mui-bar-tab {
+            background-color: #006699;
+        }
+        /* 底部文字颜色 */
+        .mui-bar.mui-bar-tab a span {
+            color: #ffffff;
+        }
+        /* 底部图标字体大小 */
+        .mui-bar.mui-bar-tab .mui-icon {
+           font-size: 20px;
+        }
+        .btn-T {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">修改密码</h1>
+    </header>
+    <!-- 主体内容 -->
+    <main class="mui-content">
+        <!-- 原密码框 -->
+        <div class="mui-input-row mui-password">
+            <input type="password" class="mui-input-password" data-input-password="3" placeholder="原密码">
+            <span class="mui-icon mui-icon-eye"></span>
+        </div>
+        <!-- 新密码框 -->
+        <div class="mui-input-row mui-password">
+            <input type="password" class="mui-input-password" data-input-password="3" placeholder="新密码">
+            <span class="mui-icon mui-icon-eye"></span>
+        </div>
+        <!-- 确认新密码框 -->
+        <div class="mui-input-row mui-password">
+            <input type="password" class="mui-input-password" data-input-password="3" placeholder="确认新密码框">
+            <span class="mui-icon mui-icon-eye"></span>
+        </div>
+        <!-- 认证码 -->
+        <div class="mui-input-row" style="margin-right=10px;">
+            <input type="text" placeholder="认证码">
+            <button class="btn-T">发送验证码</button>
+        </div>
+
+
+        <!-- 确认修改 -->
+        <div class="mui-button-row true" style="margin-right=10px;margin-left=10px;">
+            <button type="button" class="mui-btn mui-btn-primary" onclick="return false;">确认修改</button>&nbsp;&nbsp;
+        </div>
+    </main>
+
+
+    <!-- 底部导航 -->
+    <nav class="mui-bar mui-bar-tab">
+            <a class="mui-tab-item mui-active" href="#tabbar">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-chat">
+                    <span class="mui-icon mui-icon-bars"></span>
+                    <!-- <span class="mui-badge">9</span> -->
+                </span>
+                <span class="mui-tab-label">分类</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-contact">
+                <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+                <span class="mui-tab-label">购物车</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-map">
+                <span class="mui-icon mui-icon-contact mui-icon-icon-contact-filled"></span>
+                <span class="mui-tab-label">会员中心</span>
+            </a>
+        </nav>
+</body>
+
+</html>
