@@ -24,7 +24,9 @@
             background-color: #006699;
             height: 50px;
         }
+
         /* 输入框 */
+
         .mui-input {
             position: absolute;
             height: 26px;
@@ -33,14 +35,97 @@
             display: inline-block;
             width: 230px;
         }
+
         /* 搜索图标 */
+
         .mui-icon.mui-icon-search {
             position: absolute;
             right: 7px;
             top: 7px;
         }
 
+        /* 主要内容 */
 
+        .mui-bar-nav~.mui-content {
+            padding: 0;
+        }
+
+        .mui-content {
+            height: 100%;
+        }
+
+        /* 左边内容 */
+
+        .mui-content-main-left {
+            width: 80px;
+            float: left;
+        }
+
+        .mui-content-main-left ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mui-content-main-left li {
+            width: 100%;
+            height: 45px;
+            font-size: 14px;
+            line-height: 45px;
+            text-align: center;
+            border: 1px solid #c9c9c9;
+            background-color: #ffffff;
+        }
+
+        /* 运动馆 */
+
+        .mui-content-main-left .now {
+            background: #c9c9c9;
+        }
+
+        /* 右边内容 */
+
+        .mui-content-main-right {
+            flex: 1;
+        }
+
+        .mui-content-main-right ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 12px;
+            background: #fff;
+            overflow: hidden;
+
+        }
+
+        .mui-content-main-right ul li {
+            width: 33.333%;
+            float: left;
+        }
+
+        .mui-content-main-right ul li a {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            color: #c9c9c9;
+            margin: 10px;
+        }
+
+        .mui-content-main-right ul li p {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #8f8f94;
+            text-align: center;
+        }
+
+        .mui-content-main-right ul li a img {
+            display: block;
+            max-width: 66px;
+            margin: 0 auto;
+            width: 100%;
+        }
 
         /* 底部导航背景 */
 
@@ -83,9 +168,9 @@
     <!-- 主要内容 -->
     <main class="mui-content">
         <!-- 左边内容 -->
-        <aside class="mui-sort-main-left">
+        <aside class="mui-content-main-left">
             <ul>
-                <li>运动馆</li>
+                <li class="now">运动馆</li>
                 <li>女士馆</li>
                 <li>男士馆</li>
                 <li>帆布馆</li>
@@ -93,6 +178,40 @@
             </ul>
         </aside>
         <!-- 右边内容 -->
+        <setion class="mui-content-main-right">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../image/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../image/brand2.png" alt="">
+                        <p>阿迪</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../image/brand3.png" alt="">
+                        <p>新百伦</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../image/brand4.png" alt="">
+                        <p>哥伦比亚</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../image/brand5.png" alt="">
+                        <p>匡威</p>
+                    </a>
+                </li>
+            </ul>
+        </setion>
     </main>
 
 
