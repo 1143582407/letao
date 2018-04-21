@@ -1,0 +1,44 @@
+/* 头部 */
+.lt-header {
+    background-color: #006699;
+}
+ #lt-search {
+    line-height: 44px;
+    font-size: 20px;
+    color: #fff;
+}
+.lt-header .mui-title {
+    height: 34px;
+    color: #fff;
+}
+
+
+/* 底部 */
+.lt-footer {
+    background-color: #006699;
+    /* color: #fff; */
+}
+.lt-footer .mui-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #939292;
+}
+
+.lt-footer .mui-item span:first-child {
+    color: #fff;
+}
+.lt-footer .mui-item.mui-active span {
+    color: orange;
+}
+.lt-footer .mui-tab-label {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
